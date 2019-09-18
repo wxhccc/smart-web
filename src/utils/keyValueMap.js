@@ -7,7 +7,7 @@ import { mapToObject } from '@wxhccc/es-util'
 ***/
 export function configToMap (appConfig, keys) {
   let result = {}
-  keys = Array.isArray(keys) ? keys : []
+  keys = Array.isArray(keys) ? keys : ['accountState', 'dataStrategy']
   appConfig && keys.forEach(item => {
     Array.isArray(appConfig[item]) && (result[item] = mapToObject(appConfig[item], 'value', 'label'))
   })
