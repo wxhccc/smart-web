@@ -8,3 +8,7 @@ export function login (data) {
 export function logout (data) {
   return request('/auth/logout', data, 'POST')
 }
+// 获取当前用户权限树
+export function getMenuInfo (data) {
+  return request('/auth/menu', data)
+}

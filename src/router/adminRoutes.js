@@ -1,4 +1,6 @@
 export const adminComponents = {
+  'ModifyPwd': () => import('@/views/ModifyPwd'),
+  'UserProfile': () => import('@/views/UserProfile'),
   'TestPage': () => import('@/views/TestPage')
 }
 
@@ -27,6 +29,16 @@ export const adminDynaRoutes = () => ([
 
 /** 后台静态权限路由--静态路由登陆后即可访问 **/
 export const adminStaticRoutes = () => ([
+  {
+    path: 'modifypwd',
+    name: 'ModifyPwd',
+    static: true
+  },
+  {
+    path: 'userprofile',
+    name: 'UserProfile',
+    static: true
+  },
   {
     path: 'test',
     name: 'TestPage',
