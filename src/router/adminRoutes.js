@@ -1,6 +1,7 @@
 export const adminComponents = {
   'ModifyPwd': () => import('@/views/ModifyPwd'),
   'UserProfile': () => import('@/views/UserProfile'),
+  'SystemRights': () => import('@/views/systemSetting/Rights'),
   'TestPage': () => import('@/views/TestPage')
 }
 
@@ -25,6 +26,11 @@ export const adminDynaRoutes = () => ([
     }
   }
   */
+  {
+    path: 'system/rights',
+    name: 'SystemRights',
+    meta: {}
+  }
 ])
 
 /** 后台静态权限路由--静态路由登陆后即可访问 **/
