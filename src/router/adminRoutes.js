@@ -2,6 +2,7 @@ export const adminComponents = {
   'ModifyPwd': () => import('@/views/ModifyPwd'),
   'UserProfile': () => import('@/views/UserProfile'),
   'SystemRights': () => import('@/views/systemSetting/Rights'),
+  'SystemConfigs': () => import('@/views/systemSetting/Configs'),
   'TestPage': () => import('@/views/TestPage')
 }
 
@@ -29,6 +30,11 @@ export const adminDynaRoutes = () => ([
   {
     path: 'system/rights',
     name: 'SystemRights',
+    meta: {}
+  },
+  {
+    path: 'system/configs',
+    name: 'SystemConfigs',
     meta: {}
   }
 ])
