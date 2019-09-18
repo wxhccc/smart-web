@@ -1,0 +1,44 @@
+{
+  "name": "smartweb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "@wxhccc/es-util": "^1.0.0",
+    "@wxhccc/smartfetch": "^1.0.0",
+    "@wxhccc/ui-extend": "^0.1.0",
+    "anicanvas": "0.0.6",
+    "axios": "^0.19.0",
+    "cropperjs": "^1.5.1",
+    "element-ui": "^2.8.2",
+    "fecha": "^3.0.3",
+    "js-base64": "^2.5.1",
+    "lodash": "^4.17.15",
+    "md5": "^2.2.1",
+    "nprogress": "^0.2.0",
+    "numeral": "^2.0.6",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@wxhccc/api-mock-plugin": "^1.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.12.1",
+    "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.3.1",
+    "style-resources-loader": "^1.2.1",
+    "vue-cli-plugin-style-resources-loader": "^0.1.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

@@ -1,0 +1,91 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+@mixin absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@mixin fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin pct($pct) {
+  width: #{$pct};
+  position: relative;
+  margin: 0 auto;
+}
+@mixin statis-mid-box($width: 40%, $height: 60%) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  left: 50%;
+  top: 50%;
+  margin-left: -$width/2;
+  margin-top: -$height/2;
+}
+
+@mixin triangle($width, $height, $color, $direction) {
+  $width: $width/2;
+  $color-border-style: $height solid $color;
+  $transparent-border-style: $width solid transparent;
+  height: 0;
+  width: 0;
+  @if $direction==up {
+    border-bottom: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+  @else if $direction==right {
+    border-left: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+  @else if $direction==down {
+    border-top: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+  @else if $direction==left {
+    border-right: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+}
+@mixin white-bg {
+  background-color: #fff;
+}
+
+@mixin thick-dark-backgroud {
+  background-color: $thick-dark-bg-color;
+}
+
+@mixin dark-backgroud {
+  background-color: $dark-bg-color;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+@mixin page-module-pane {
+  @include white-bg;
+  padding: 20px;
+}
+@mixin shadow-card {
+  @include white-bg;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+}

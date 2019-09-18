@@ -1,0 +1,8 @@
+@import './variables.scss';
+/* 覆盖一些element-ui样式 */
+$--color-primary: $theme-color;
+$--border-radius-base: 0;
+$--border-radius-small: 0;
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";

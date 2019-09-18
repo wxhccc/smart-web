@@ -1,0 +1,44 @@
+/* element-ui 滚动条组件样式修复 */
+.sw-el-scrollbar {
+  height: 100%;
+  .el-scrollbar__wrap {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+/* 
+表格组件标签左对齐时为使必选标记不影响文字对齐效果，添加此样式，
+ps: 样式仅对组件FormItemField生效，自定义表格需添加此class
+*/
+.el-form--label-left {
+  .comp-form-item-field {
+    margin-left: 8px;
+    .el-form-item__label {
+      position: relative;
+      &:before {
+        position: absolute;
+        left: -8px;
+      }
+    }
+  }
+}
+/* 
+设置el-form-item中的常用表单域与容器等宽
+*/
+.sw-common-form {
+  .el-select, .el-cascader, .el-date-editor {
+    width: 100%;
+  }
+}
+
+.ue-multi-alert {
+  &.el-alert--info.is-light {
+    border: 1px solid $light-grey;
+    background-color: $light-grey * 1.05;
+  }
+}
+.ue-table-operation {
+  .el-input {
+    max-width: 240px;
+  }
+}
