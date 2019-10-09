@@ -23,7 +23,7 @@
                 @node-drop="handleNodeDrop"
               >
                 <div slot-scope="scope" :class="['right-node', scope.data.isMenu ? 'menu-node': 'point-node']">
-                  <i :class="['node-type-icon', scope.data.isMenu ? 'sw-icon-menu' : 'sw-icon-key']"></i>
+                  <i :class="['node-type-icon', scope.data.isMenu ? (scope.data.template ? 'sw-icon-moban' : 'sw-icon-menu') : 'sw-icon-key']"></i>
                   <span :class="['node-name', { 'is-disabled': checkDataPropFalsy(scope.node) }]">
                     <i class="sw-icon-attentionforbid"></i>
                     {{scope.data.name}}

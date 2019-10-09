@@ -26,8 +26,9 @@
 
 <script>
 import { FormFields, FormBtns } from '@wxhccc/ui-extend'
+import TplField from './TplField'
 import { commonFormProps } from '@/common'
-import { createFfiRulesProps, createInputFormItem, createRadiosFormItem, createSelectFormItem } from '@/common'
+import { createFfiRulesProps, createInputFormItem, createRadiosFormItem, createSelectFormItem, createFormFieldItem } from '@/common'
 import { regexRuleCreator } from '@/utils/validate'
 import { tree2array } from '@wxhccc/es-util'
 import { omit } from 'lodash'
@@ -40,6 +41,7 @@ const createFieldItems = (lockType, lockState, indexField) => {
   const stateFieldOpts = { props: { disabled: lockState } }
   return [
     createRadiosFormItem('类型', 'isMenu', [{ label: '菜单', value: true }, { label: '权限点', value: false }], typeFieldOpts),
+    ...(!lockState ? [createFormFieldItem(TplField, '模版页', 'template')] : []),
     createInputFormItem(createFfiRulesProps('名称', true), 'name', '用于展示菜单/权限点名称的文字'),
     createInputFormItem(createFfiRulesProps('KEY', true, [keyRule]), 'key', '菜单路由名/权限点关键字'),
     ...(indexField ? [indexField] : []),
@@ -133,7 +135,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .swcomp-right-form-card {
-  /deep/ .comp-form-item-fields {
+  .comp-form-item-fields::v-deep {
     margin-top: 10px;
     padding-right: 10px;
     .form-btns-pane {
