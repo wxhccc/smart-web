@@ -32,7 +32,9 @@ export default {
     ]),
     dropMenuItems () {
       return [
-        { route: { name: 'AdminIndex' }, label: '首页' }
+        { route: { name: 'AdminIndex' }, label: '首页' },
+        { route: { name: 'UserProfile' }, label: '个人资料' },
+        { route: { name: 'ModifyPwd' }, label: '修改密码' }
       ]
     }
   },

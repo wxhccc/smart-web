@@ -4,3 +4,7 @@ import { request } from '@wxhccc/smartfetch'
 export function getOssAccessToken (data) {
   return request('/oss/access', data)
 }
+// get province-city-dist data
+export function getProvCityData (data) {
+  return request('/common/areas', data)
+}

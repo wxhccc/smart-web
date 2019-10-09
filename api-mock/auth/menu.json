@@ -1,0 +1,151 @@
+{
+  "code": 0,
+  "message": "",
+  "data": [
+    {
+      "id": 100,
+      "pid": 0,
+      "isMenu": true,
+      "name": "访问控制",
+      "key": "AccessControl",
+      "icon": "sw-icon-user",
+      "index": "",
+      "children": [
+        {
+          "id": 107,
+          "pid": 100,
+          "isMenu": true,
+          "name": "用户",
+          "key": "UserList",
+          "icon": "",
+          "index": "",
+          "children": [
+            {
+              "id": 109,
+              "pid": 107,
+              "isMenu": false,
+              "name": "添加用户",
+              "key": "add",
+              "icon": "",
+              "index": "",
+              "children": []
+            },
+            {
+              "id": 110,
+              "pid": 107,
+              "isMenu": false,
+              "name": "修改用户",
+              "key": "edit",
+              "icon": "",
+              "index": "",
+              "children": []
+            },
+            {
+              "id": 111,
+              "pid": 107,
+              "isMenu": false,
+              "name": "冻结/解冻用户",
+              "key": "freeze",
+              "icon": "",
+              "index": "",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 112,
+          "pid": 100,
+          "isMenu": true,
+          "name": "用户组",
+          "key": "UserGroups",
+          "icon": "",
+          "index": "",
+          "children": [
+            {
+              "id": 113,
+              "pid": 112,
+              "isMenu": false,
+              "name": "编辑用户组",
+              "key": "edit",
+              "icon": "",
+              "index": "",
+              "children": []
+            },
+            {
+              "id": 114,
+              "pid": 112,
+              "isMenu": false,
+              "name": "删除用户组",
+              "key": "delete",
+              "icon": "",
+              "index": "",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 108,
+          "pid": 100,
+          "isMenu": true,
+          "name": "角色",
+          "key": "RolesMana",
+          "icon": "",
+          "index": "",
+          "children": [
+            {
+              "id": 115,
+              "pid": 108,
+              "isMenu": false,
+              "name": "编辑角色",
+              "key": "edit",
+              "icon": "",
+              "index": "",
+              "children": []
+            },
+            {
+              "id": 116,
+              "pid": 108,
+              "isMenu": false,
+              "name": "删除角色",
+              "key": "delete",
+              "icon": "",
+              "index": "",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "pid": 0,
+      "isMenu": true,
+      "name": "系统设置",
+      "key": "SystemSetting",
+      "icon": "sw-icon-setting",
+      "index": "",
+      "children": [
+        {
+          "id": 2,
+          "pid": 1,
+          "isMenu": true,
+          "name": "权限管理",
+          "key": "SystemRights",
+          "icon": "",
+          "index": "",
+          "children": []
+        },
+        {
+          "id": 3,
+          "pid": 1,
+          "isMenu": true,
+          "name": "基础配置",
+          "key": "SystemConfigs",
+          "icon": "",
+          "index": "",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
