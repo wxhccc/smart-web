@@ -89,7 +89,7 @@
       @include triangle(20px, 12px, $white, left)
     }
   }
-  /deep/ .rights-tree {
+  .rights-tree::v-deep {
     margin: 10px 17px 17px 0;
     .el-tree-node__content {
       position: relative;
@@ -114,11 +114,6 @@
           display: inline;
         }
       }
-    }
-    .menu-node {
-    }
-    .point-node {
-
     }
   }
 }
