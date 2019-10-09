@@ -1,3 +1,3 @@
 window.API_CONFIG = {
-  url: '/api-mock/'
+  url: 'http://localhost:3000'
 }
