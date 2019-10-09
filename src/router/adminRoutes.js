@@ -20,6 +20,11 @@ export const adminDynaRoutes = () => ([
     }
   }
   */
+  {
+    path: 'system/rights',
+    name: 'SystemRights',
+    meta: {}
+  }
 ])
 /** 模版页的配置信息对象 **/
 export const adminTplComponents = {
@@ -27,6 +32,16 @@ export const adminTplComponents = {
 
 /** 后台静态权限路由--静态路由登陆后即可访问 **/
 export const adminStaticRoutes = () => ([
+  {
+    path: 'modifypwd',
+    name: 'ModifyPwd',
+    static: true
+  },
+  {
+    path: 'userprofile',
+    name: 'UserProfile',
+    static: true
+  },
   {
     path: 'test',
     name: 'TestPage',
