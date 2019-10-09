@@ -1,11 +1,6 @@
-export const adminComponents = {
-  'ModifyPwd': () => import('@/views/ModifyPwd'),
-  'UserProfile': () => import('@/views/UserProfile'),
-  'TestPage': () => import('@/views/TestPage')
-}
-
 const rememberMeta = (listPageName) => ({ activeTarget: listPageName, remember: true })
 
+/** 固定name（非模版）的动态权限路由列表 **/
 export const adminDynaRoutes = () => ([
   /*
   {
@@ -26,6 +21,9 @@ export const adminDynaRoutes = () => ([
   }
   */
 ])
+/** 模版页的配置信息对象 **/
+export const adminTplComponents = {
+}
 
 /** 后台静态权限路由--静态路由登陆后即可访问 **/
 export const adminStaticRoutes = () => ([
