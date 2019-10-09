@@ -24,6 +24,11 @@ export const adminDynaRoutes = () => ([
     path: 'system/rights',
     name: 'SystemRights',
     meta: {}
+  },
+  {
+    path: 'system/configs',
+    name: 'SystemConfigs',
+    meta: {}
   }
 ])
 /** 模版页的配置信息对象 **/
