@@ -144,6 +144,16 @@
           "icon": "",
           "index": "",
           "children": []
+        },
+        {
+          "id": 4,
+          "pid": 1,
+          "isMenu": true,
+          "name": "模版页配置",
+          "key": "TplPages",
+          "icon": "",
+          "index": "",
+          "children": []
         }
       ]
     }

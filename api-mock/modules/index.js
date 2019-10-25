@@ -9,7 +9,8 @@ function clearCache () {
 clearCache()
 /** end **/
 const common = require('./common')
+const system = require('./system')
 
 module.exports = function (mockScript) {
-  return Object.assign({}, common(mockScript))
+  return Object.assign({}, common(mockScript), system(mockScript))
 }

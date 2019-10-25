@@ -16,3 +16,16 @@ export function getSystemConfigs (data) {
 export function updateSystemConfigs (data) {
   return request('/system/configs', data, 'PUT')
 }
+// 获取模版页面列表
+export function getTplPageList (data) {
+  return request('/system/tplpages', data)
+}
+
+// 获取模版页面详细信息
+export function getTplPageInfo (id, data) {
+  return request(`/system/tplpages/${id}`, data)
+}
+// 更新模版页面配置信息
+export function updateTplPageInfo (id, data) {
+  return request(`/system/tplpages/${id}`, data, 'PUT')
+}

@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "total": 2,
+    "rows": [
+      {
+        "id": 118,
+        "pid": 117,
+        "key": "PublishedPosts",
+        "name": "已发布",
+        "isMenu": true,
+        "template": "PostListTpl",
+        "state": 1
+      },
+      {
+        "id": 119,
+        "pid": 117,
+        "key": "DraftPosts",
+        "name": "草稿",
+        "isMenu": true,
+        "template": "PostListTpl",
+        "state": 1
+      }
+    ]
+  }
+}

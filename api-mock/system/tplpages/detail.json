@@ -1,0 +1,13 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 118,
+    "pid": 117,
+    "key": "PublishedPosts",
+    "name": "已发布",
+    "isMenu": true,
+    "template": "PostListTpl",
+    "configs": { "tableColumns": [ "title", "type", "tags", "createdAt", "publishedAt", "author" ], "searchForm": [ "_title", "_author", "_type" ], "useTags": true }
+  }
+}

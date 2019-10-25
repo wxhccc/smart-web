@@ -29,6 +29,17 @@ export const adminDynaRoutes = () => ([
     path: 'system/configs',
     name: 'SystemConfigs',
     meta: {}
+  },
+  {
+    path: 'system/tplpages',
+    name: 'TplPages',
+    meta: {}
+  },
+  {
+    path: 'system/tplpages/:id',
+    name: 'TplPageSetting',
+    powerRelevance: 'TplPages',
+    meta: {}
   }
 ])
 /** 模版页的配置信息对象 **/

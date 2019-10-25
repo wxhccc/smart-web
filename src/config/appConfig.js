@@ -1,5 +1,8 @@
+import { getTplOptions } from '@/router/adminRoutes'
+
 export default function () {
   return {
+    tplPages: getTplOptions(),
     dataType: [
       { value: 0, label: 'String' },
       { value: 1, label: 'Number' }
