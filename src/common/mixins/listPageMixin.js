@@ -90,8 +90,7 @@ export default function (useRMD) {
         }
         const searchForm = {
           items: this.handledFormItems,
-          model: this.formData,
-          dynaData: this.itemsParams
+          data: this.formData
         }
         return (typeof getTabsSearchForms === 'function') ? getTabsSearchForms.call(this, searchForm) : searchForm
       },
@@ -281,7 +280,7 @@ export default function (useRMD) {
       skipToDetail (row) {
         const { detailRouteName, detailRouteArgs } = this.RMD
         if (detailRouteName) {
-          const args = typeof editRouteParams === 'function' ? detailRouteArgs(row) : { params: { id: row.id } }
+          const args = typeof detailRouteArgs === 'function' ? detailRouteArgs(row) : { params: { id: row.id } }
           this.skipToRoute({ name: detailRouteName, ...args })
         }
       },
