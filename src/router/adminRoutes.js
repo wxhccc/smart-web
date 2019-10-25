@@ -23,6 +23,18 @@ export const adminDynaRoutes = () => ([
 ])
 /** 模版页的配置信息对象 **/
 export const adminTplComponents = {
+  /* example
+  'PostListTpl': {
+    path: routeName => `post/${hyphenate(routeName.replace('Posts', ''))}`,
+    tplName: '文章模版页'
+  }*/
+}
+/** 导出模版配置为列表供appConfig使用 **/
+export function getTplOptions () {
+  return Object.keys(adminTplComponents).map(name => ({
+    label: adminTplComponents[name].tplName,
+    value: name
+  }))
 }
 
 /** 后台静态权限路由--静态路由登陆后即可访问 **/
