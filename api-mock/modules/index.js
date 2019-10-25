@@ -9,7 +9,8 @@ function clearCache () {
 clearCache()
 /** end **/
 const common = require('./common')
+const access = require('./access')
 
 module.exports = function (mockScript) {
-  return Object.assign({}, common(mockScript))
+  return Object.assign({}, common(mockScript), access(mockScript))
 }

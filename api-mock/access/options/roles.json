@@ -1,0 +1,14 @@
+{
+  "code": 0,
+  "message": "",
+  "data": [
+    {
+      "value": 9,
+      "label": "管理员"
+    },
+    {
+      "value": 10,
+      "label": "系统管理"
+    }
+  ]
+}

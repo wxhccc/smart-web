@@ -1,0 +1,19 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+      "id": 2,
+      "account": "he",
+      "nick": "he",
+      "avatar": "",
+      "roleIds": [
+          9,
+          10
+      ],
+      "state": 1,
+      "dataStrategy": 0,
+      "groupId": 3,
+      "groupName": null,
+      "Group": null
+  }
+}

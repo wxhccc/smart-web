@@ -2,6 +2,40 @@ const rememberMeta = (listPageName) => ({ activeTarget: listPageName, remember: 
 
 /** 固定name（非模版）的动态权限路由列表 **/
 export const adminDynaRoutes = () => ([
+  /** access-control-module **/
+  {
+    path: '/access/users',
+    title: '用户列表',
+    name: 'UserList',
+    meta: {}
+  },
+  {
+    path: '/access/users/new',
+    title: '新增用户',
+    name: 'UserAdd',
+    component: 'UserEdit',
+    powerRelevance: ['UserList', (actions) => actions.includes('add')],
+    meta: { ...rememberMeta('UserList') }
+  },
+  {
+    path: '/access/users/:id(\\d+)',
+    title: '编辑用户',
+    name: 'UserEdit',
+    powerRelevance: ['UserList', (actions) => actions.includes('edit')],
+    meta: { ...rememberMeta('UserList') }
+  },
+  {
+    path: '/access/groups',
+    title: '用户组管理',
+    name: 'UserGroups',
+    component: 'GroupRoleTpl'
+  },
+  {
+    path: '/access/roles',
+    title: '角色管理',
+    name: 'RolesMana',
+    component: 'GroupRoleTpl'
+  },
   /*
   {
     path: '', // 路由路径

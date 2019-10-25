@@ -1,0 +1,38 @@
+{
+    "code": 0,
+    "message": "",
+    "data": {
+        "total": 2,
+        "rows": [
+            {
+                "isTree": true,
+                "id": 6,
+                "pid": 0,
+                "name": "开发者",
+                "parentIds": [],
+                "creator": "admin",
+                "createdAt": "2019-06-10 17:00:13"
+            },
+            {
+                "isTree": true,
+                "id": 7,
+                "pid": 6,
+                "name": "WEB前端",
+                "parentIds": [
+                    6
+                ],
+                "creator": "admin",
+                "createdAt": "2019-09-18 13:32:20"
+            },
+            {
+                "isTree": true,
+                "id": 10,
+                "pid": 0,
+                "name": "贡献者",
+                "parentIds": [],
+                "creator": "admin",
+                "createdAt": "2019-09-18 15:04:15"
+            }
+        ]
+    }
+}

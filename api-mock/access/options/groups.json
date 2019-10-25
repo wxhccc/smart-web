@@ -1,0 +1,20 @@
+{
+  "code": 0,
+  "message": "",
+  "data": [
+    {
+      "value": 6,
+      "label": "开发者",
+      "children": [
+        {
+          "value": 7,
+          "label": "WEB前端"
+        }
+      ]
+    },
+    {
+      "value": 10,
+      "label": "贡献者"
+    }
+  ]
+}
