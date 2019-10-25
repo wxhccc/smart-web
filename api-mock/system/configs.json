@@ -1,0 +1,82 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "base": {
+      "defaultAvatar": "http://oss.sw.wxhice.com/adm/avatar/c212d8a15ee5fade0c8eecef0958a554.jpeg"
+    },
+    "dict": [
+      {
+        "id": 5,
+        "key": "bank",
+        "value": [
+          {
+            "label": "中国银行",
+            "value": "001"
+          },
+          {
+            "label": "招商银行",
+            "value": "002"
+          },
+          {
+            "label": "农业银行",
+            "value": "003"
+          }
+        ],
+        "valueType": 0,
+        "describe": "银行",
+        "state": 1
+      },
+      {
+        "id": 6,
+        "key": "grade",
+        "value": [
+          {
+            "label": "一年级",
+            "value": 1
+          },
+          {
+            "label": "二年级",
+            "value": 2
+          },
+          {
+            "label": "三年级",
+            "value": 3
+          },
+          {
+            "label": "四年级",
+            "value": 4
+          },
+          {
+            "label": "五年级",
+            "value": 5
+          },
+          {
+            "label": "六年级",
+            "value": 6
+          }
+        ],
+        "valueType": 1,
+        "describe": "年级",
+        "state": 1
+      },
+      {
+        "id": 7,
+        "key": "school",
+        "value": [
+          {
+            "label": "希望小学",
+            "value": "A001"
+          },
+          {
+            "label": "附属小学",
+            "value": "A002"
+          }
+        ],
+        "valueType": 0,
+        "describe": "学校",
+        "state": 1
+      }
+    ]
+  }
+}
