@@ -4,7 +4,11 @@ import ObjectArrayField from '@/common/components/ObjectArrayField'
 
 export function baseModuleFieldItems (avatarUrl, onUpdate) {
   return [
-    createInputFormItem({ label: '默认用户头像 :', class: 'default-avatar' }, 'defaultAvatar', '请填写图片地址或者上传图片', { extraNode: AvatarEdit, extraProps: { url: avatarUrl, onUpdate } })
+    createInputFormItem({ label: '默认用户头像 :', class: 'default-avatar' }, 'defaultAvatar', '请填写图片地址或者上传图片', {
+      slots: {
+        default: { component: AvatarEdit, props: { url: avatarUrl, onUpdate } }
+      }
+    })
   ]
 }
 const valueLabelConfig = (isNumber) => ([

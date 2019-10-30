@@ -3,6 +3,7 @@
     <ue-drawer
       class="dict-item-edit-dialog"
       :visible.sync="dictEditForm.visible"
+      container=""
       :title="isDictItemEdit ? '修改字典项' : '新增字典项'"
     >
       <el-form class="dict-item-form" ref="dictFrom" :model="dictEditForm.data" v-bind="dictFormProps">
@@ -67,7 +68,7 @@
 
 <style lang="scss" scoped>
 .dict-item-edit-dialog {
-  /deep/ .dict-item-form {
+  .dict-item-form::v-deep {
     padding: 20px;
     & > .ue-form-fields > .ue-form-field-item > .el-form-item__content > .ue-form-field {
       width: 320px;
@@ -91,13 +92,13 @@
     position: relative;
   }
   .base-config {
-    /deep/ .comp-form-item-field {
-      .field-item {
+    .ue-form-fields::v-deep {
+      .ue-form-field {
         width: 400px;
         vertical-align: top;
       }
-      &.default-avatar {
-        .field-item {
+      .default-avatar {
+        .ue-form-field {
           margin: 0 20px 12px 0;
         }
       }

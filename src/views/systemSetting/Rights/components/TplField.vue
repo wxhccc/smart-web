@@ -13,7 +13,6 @@
 
 <script>
 import { CommonField } from '@wxhccc/ui-extend'
-import { adminTplComponents as tplComps } from '@/router/adminRoutes'
 
 export default {
   name: 'TplField',
@@ -35,10 +34,7 @@ export default {
       },
       tplField: {
         component: 'ElSelect',
-        data: tplComps ? Object.keys(tplComps).map(key => ({
-          label: tplComps[key].tplName,
-          value: key
-        })) : []
+        data: this.$store.getters.appConfig.tplPages
       }
     }
   },
